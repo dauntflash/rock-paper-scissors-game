@@ -1,0 +1,88 @@
+@font-face {
+    font-family: anton;
+    src: url(assets/Anton.ttf);
+}
+
+body{
+    background: #FFFDED;
+    box-sizing: border-box;
+    margin: 0;
+}
+.box{
+    padding: 50px 15px 35px 15px;
+    border-radius: 5px;
+    margin: 20vh auto;
+    width: 500px;
+    background: #3943B7;
+    box-shadow: 1px 8px 6px black;
+    text-align: center;
+}
+.display{
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+    gap:90px;
+    position: relative;
+}
+
+.image1,.image2 span{
+    color: #FFFDED;
+    font-family:anton;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+#image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 3px;
+    transition: .3s ease-in;
+    padding: 15px;
+    border-radius: 5px;
+}
+#image:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    background: #4f59caa8;
+}
+.display img{
+    height: 90px;
+}
+#image span{
+    font-size: 25px;
+    color: #FFFDED;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.image1 img{
+    transform-origin: left;
+}
+.image2 img{
+    transform-origin: right;
+    transition: ease;
+}
+@keyframes shake {
+    25% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+}
+.shake-animation {
+    animation: shake 0.5s infinite;
+}
+
+.play h3{
+    color: #FFFDED;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    border-radius: 50px;
+}
+.choices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.choices img{
+    height: 70px;
+}
+

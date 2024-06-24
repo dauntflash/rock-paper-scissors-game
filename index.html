@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock paper scissor</title>
+</head>
+<body>
+    <div class="box">
+        <div class="display">
+            <div id="shaking-image" class="image1">
+                <span>Computer</span>
+                <img id="computerImage" src="assets/fist 1.svg" alt="hand" >
+            </div>
+            <div id="shaking-image" class="image2">
+                <span>You</span>
+                <img id="myImage" src="assets/fist-cross-dictator-bang-svgrepo-com.svg" alt="hand" >
+            </div>
+        </div>
+        <div class="play">
+            <h3 id="text-display">Make a turn !!</h3>
+            <div class="choices">
+                <div id="image" onclick="shaker(rock_image)" >
+                    <img src="assets/fist-cross-dictator-bang-svgrepo-com.svg" alt="rock">
+                    <span>Rock</span>
+                </div>
+                <div id="image" onclick="shaker(paper_image)" >
+                    <img src="assets/hand-line-icon.svg" alt="paper">
+                    <span>Paper</span>
+                </div>
+                <div id="image" onclick="shaker(scissor_image)" >
+                    <img src="assets/hand-two-finger-icon.svg" alt="Scissors">
+                    <span>Scissors</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
