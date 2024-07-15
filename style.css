@@ -7,6 +7,7 @@ body{
     background: #FFFDED;
     box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }
 .box{
     padding: 50px 15px 35px 15px;
@@ -16,6 +17,16 @@ body{
     background: #3943B7;
     box-shadow: 1px 8px 6px black;
     text-align: center;
+    position: relative;
+}
+.reload img{
+    position: absolute;
+    height: 50px;
+    right: 5px;
+    top: 5px;
+}
+.reload img:hover{
+    cursor: pointer;
 }
 .display{
     padding: 0 20%;

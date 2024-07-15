@@ -18,7 +18,12 @@ function shaker(mySource) {
     my_image.src=rock_image
     computer_image.src=first_rock_image
 }
+function reset(){
+    computer_image.src=first_rock_image
+    my_image.src=rock_image
+    text_display.textContent= "Play again !!"
 
+}
 function stopShaker(mySource) {
     if(mySource==rock_image){
         user_choice='1'
