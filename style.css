@@ -96,4 +96,31 @@ body{
 .choices img{
     height: 70px;
 }
+@media screen and (max-width: 450px) {
+    .box{
+        width: 90%;
+    }
+    .display{
+        gap: 20px;
+    }
+    .image1 img,.image2 img{
+        height: 50px;
+    }
+    .choices img{
+        height: 50px;
+    }
+    .play h3{
+        font-size: 20px;
+    }
+    .reload img{
+        height: 40px;
+    }
+    .image1 span,.image2 span{
+        font-size: 15px;
+    }
+    #image span{
+        font-size: 20px;
+    }
+    
+}
 
