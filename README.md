@@ -40,3 +40,5 @@ This project is a web-based implementation of the classic Rock Paper Scissors ga
 - Scissors beats Paper
 - Paper beats Rock
 - If both choices are the same, it's a draw.
+
+Have fun..
