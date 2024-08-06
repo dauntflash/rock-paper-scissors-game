@@ -10,9 +10,9 @@ body{
     overflow: hidden;
 }
 .box{
-    padding: 50px 15px 35px 15px;
+    padding: 50px 15px 30px 15px;
     border-radius: 5px;
-    margin: 20vh auto;
+    margin: 2vh auto;
     width: 500px;
     background: #3943B7;
     box-shadow: 1px 8px 6px black;
@@ -21,7 +21,7 @@ body{
 }
 .reload img{
     position: absolute;
-    height: 50px;
+    height: 40px;
     right: 5px;
     top: 5px;
 }
@@ -41,7 +41,7 @@ body{
     font-family:anton;
     letter-spacing: 1px;
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 18px;
 }
 #image{
     display: flex;
@@ -59,10 +59,10 @@ body{
     background: #4f59caa8;
 }
 .display img{
-    height: 90px;
+    height: 80px;
 }
 #image span{
-    font-size: 25px;
+    font-size: 20px;
     color: #FFFDED;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -84,7 +84,7 @@ body{
 .play h3{
     color: #FFFDED;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 50px;
 }
 .choices{
@@ -123,4 +123,38 @@ body{
     }
     
 }
-
+.scoreBoard{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #3943B7 ;
+    border-radius: 10px;
+}
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex:1;
+    background-color: #3943B7;
+    color: #FFFDED;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.players{
+    flex: 1;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.player:first-child{
+    border-bottom:2px solid #3943B7;
+}
+.player h3{
+    font-size: 15px;
+}
+.player span{
+    font-size: 25px;
+}

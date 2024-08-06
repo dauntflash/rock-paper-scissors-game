@@ -2,6 +2,8 @@ const text_display=document.getElementById("text-display");
 var my_image=document.getElementById("myImage")
 var computer_image=document.getElementById("computerImage")
 
+const userScore=document.getElementById("userScore")
+const computerScore=document.getElementById("computerScore")
 const first_rock_image="assets/fist 1.svg"
 const rock_image="assets/fist-cross-dictator-bang-svgrepo-com.svg"
 const scissor_image="assets/hand-two-finger-icon.svg"
@@ -21,6 +23,8 @@ function shaker(mySource) {
 function reset(){
     computer_image.src=first_rock_image
     my_image.src=rock_image
+    userScore.textContent=0
+    computerScore.textContent=0
     text_display.textContent= "Play again !!"
 
 }
@@ -67,9 +71,11 @@ function game(){
     else if (computer_choice != user_choice){
         if (computer_choice == '1' && user_choice=='2' ||computer_choice=='2' && user_choice =='3' || computer_choice=='3' && user_choice == '1'){
                 text_display.textContent="You win !!"
+                userScore.innerHTML=parseInt(userScore.textContent)+1
             }
         else {
                 text_display.textContent="You lose !!"
+                computerScore.innerHTML=parseInt(computerScore.textContent)+1
             }
     }
 }
